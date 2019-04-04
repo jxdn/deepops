@@ -6,7 +6,7 @@
 #  bip: 192.168.99.1/24
 
 # dns-config
-#dns_config_servers: [8.8.8.8]
+dns_config_servers: [8.8.8.8]
 #dns_config_search: [example.com]
 
 # NIS configuration
@@ -28,7 +28,7 @@
 #slurm_manage_gpus: no
 #slurm_cluster_name: deepops
 #slurm_username: slurm
-#slurm_password: ReplaceWithASecurePasswordInTheVault
+#slurm_password: "tes"
 #slurm_db_username: slurm
 #slurm_db_password: AlsoReplaceWithASecurePasswordInTheVault
 #slurm_exclusive: "NO"

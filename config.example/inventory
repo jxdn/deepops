@@ -12,7 +12,7 @@ mgmt       ansible_host=10.1.1.128
 # Slurm Controller/Login Servers
 # See group_vars/login.yml for configuration
 [login]
-#login01    ansible_host=10.0.0.2
+login    ansible_host=10.1.1.119
 
 # GPU Servers - All GPU servers, including DGX if desired
 # See group_vars/gpu-servers.yml for configuration
@@ -41,7 +41,7 @@ management
 ######
 
 [all:vars]
-#ansible_user=ubuntu
+ansible_user=admin
 # Configure SSH bastion/jumpbox for the cluster
 #ansible_ssh_common_args='-o ProxyCommand="ssh -W %h:%p -q ubuntu@10.0.0.1"'
 
