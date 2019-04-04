@@ -1,0 +1,62 @@
+# Configuration common to all hosts
+# Define per-group or per-host values in the other configuration files
+
+# Docker Configuration
+#docker_daemon_json:
+#  bip: 192.168.99.1/24
+
+# dns-config
+#dns_config_servers: [8.8.8.8]
+#dns_config_search: [example.com]
+
+# NIS configuration
+#nis_domain: example.com
+#nis_server: 10.0.0.1
+
+# Kerberos configuration
+#kerberos_client_realm_name: "example.com"
+#kerberos_client_kdc_hostname: "kerberos"
+#kerberos_client_admin_hostname: "kerberos"
+#nfs_idmapd_domain: example.com
+
+# AutoFS configuration
+#autofs_mount: "/home"
+#autofs_map: "auto.home_linux"
+
+# Slurm job scheduler configuration
+#slurm_user_home: /local/slurm
+#slurm_manage_gpus: no
+#slurm_cluster_name: deepops
+#slurm_username: slurm
+#slurm_password: ReplaceWithASecurePasswordInTheVault
+#slurm_db_username: slurm
+#slurm_db_password: AlsoReplaceWithASecurePasswordInTheVault
+#slurm_exclusive: "NO"
+#slurm_max_job_timelimit: INFINITE
+#slurm_default_job_timelimit:
+
+#nfs_exports:
+#  - path: /export/shared
+#    options: "*(rw,sync,no_root_squash)"
+
+#nfs_mounts:
+#  - mountpoint: /mnt/shared
+#    server: '{{ groups["nfs-server"][0] }}'
+#    path: /export/shared
+#    options: async,vers=3
+
+# Collectd
+#collectd_network_server: "deepops-mgmt.example.com"
+#collectd_network_port: "30300"
+#collectd_python_module_path: "/usr/lib/collectd/dcgm"
+#collectd_python_modules: []
+#collectd_config_dir: "/etc/collectd/collectd.conf.d"
+#with_dcgm_collectd: false
+
+# Lmod modules
+#lmod_modulepath: /shared/modules/all
+
+# Extra software to install via software.yml playbook
+#software_extra_packages:
+#  - build-essential
+#  - "{{ 'linux-headers-' + ansible_kernel }}"
