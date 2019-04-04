@@ -7,7 +7,7 @@
 # Kubernetes Management Servers
 # See group_vars/management.yml for configuration
 [management]
-#mgmt       ansible_host=10.0.0.1
+mgmt       ansible_host=10.1.1.128
 
 # Slurm Controller/Login Servers
 # See group_vars/login.yml for configuration
